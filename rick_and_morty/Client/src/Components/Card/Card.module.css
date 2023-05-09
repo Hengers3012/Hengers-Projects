@@ -1,0 +1,7 @@
+.containerCard {
+  display: table;
+  height: 100%;
+  width: auto;
+  background: radial-gradient(ellipse at bottom, #2f4154 0%, #20243a 100%);
+  overflow: hidden;
+}

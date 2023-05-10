@@ -1,7 +1,84 @@
+/* *,
+*::before,
+*::after {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+} */
+
 .containerCard {
-  display: table;
-  height: 100%;
-  width: auto;
-  background: radial-gradient(ellipse at bottom, #2f4154 0%, #20243a 100%);
+  height: 400px;
+  width: 250px;
+  border: 3px ridge #010101b4;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+.containerButtonX {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10%;
+  height: auto;
+  margin: auto;
+  margin-top: 15px;
+  margin-left: 175px;
+  font-size: 10px;
+  background-color: rgba(0, 0, 0, 0);
+}
+.containerButtonX button {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+.containerButtonX button:hover {
+  scale: 1.2;
+}
+
+.containerCard::before {
+  content: "";
+  top: -25%;
+  left: -75%;
+  height: 150%;
+  width: 250%;
+  position: absolute;
+  background: conic-gradient(
+    #c2fd00,
+    #72fe00,
+    #20ff58,
+    #1eff00,
+    #00ff62,
+    #00ff77,
+    #04fd00
+  );
+  animation: spin 1.5s infinite linear;
+  z-index: -50;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+.containerCard::after {
+  content: " ";
+  position: absolute;
+  background-color: dimgray;
+  top: 1.5%;
+  left: 2.2%;
+  height: 96%;
+  width: 94%;
+  border-radius: 10px;
+  border: 3px ridge #01010182;
+  display: grid;
+  place-items: center;
+  z-index: -49;
+}
+.imageCharacter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px 25px 10px 25px;
+  border: 1px solid black;
+  border-radius: 10px;
   overflow: hidden;
 }

@@ -28,13 +28,17 @@
   background-color: rgba(0, 0, 0, 0);
 }
 .containerButtonX button {
+  position: relative;
   background-color: rgba(0, 0, 0, 0);
   border: none;
 }
 .containerButtonX button:hover {
-  scale: 1.2;
+  scale: 1.25;
+  transition: all 0.3s ease 0s;
 }
-
+.containerButtonX button:not(:hover) {
+  transition: all 0.5s ease;
+}
 .containerCard::before {
   content: "";
   top: -25%;
@@ -43,13 +47,13 @@
   width: 250%;
   position: absolute;
   background: conic-gradient(
-    #c2fd00,
-    #72fe00,
-    #20ff58,
-    #1eff00,
-    #00ff62,
-    #00ff77,
-    #04fd00
+    #54fd00,
+    #b6fe00,
+    #77ff00,
+    #1aff00,
+    #00ff1a,
+    #00ff59,
+    #00fd98
   );
   animation: spin 1.5s infinite linear;
   z-index: -50;
@@ -62,7 +66,7 @@
 .containerCard::after {
   content: " ";
   position: absolute;
-  background-color: dimgray;
+  background-color: rgba(18, 18, 18, 0.908);
   top: 1.5%;
   left: 2.2%;
   height: 96%;
@@ -71,14 +75,23 @@
   border: 3px ridge #01010182;
   display: grid;
   place-items: center;
-  z-index: -49;
+  z-index: -40;
 }
 .imageCharacter {
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 15px;
+  height: 200px;
   margin: 5px 25px 10px 25px;
   border: 1px solid black;
   border-radius: 10px;
+  box-shadow: 0 20px 35px rgba(6, 12, 6, 0.392);
   overflow: hidden;
+}
+.imageCharacter img {
+  display: flex;
+  height: auto;
+  width: 100%;
 }

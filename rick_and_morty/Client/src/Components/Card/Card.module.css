@@ -10,13 +10,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 350px;
+  height: 320px;
   width: 250px;
   transition: all 0.3s ease 0s;
   border: 3px ridge #010101b4;
   position: relative;
   border-radius: 15px;
-  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.4);
   overflow: hidden;
 }
 .containerCard:hover {
@@ -31,6 +31,8 @@
   box-shadow: 0 20px 35px rgba(0, 0, 0, 0.3);
   overflow: hidden;
 }
+
+/*Botón X*/
 .containerButtonX {
   display: flex;
   align-items: center;
@@ -44,13 +46,13 @@
 .containerButtonX button {
   scale: 1.5;
   position: absolute;
-  top: 15px;
-  right: 10px;
+  top: 18px;
+  right: 15px;
   background-color: rgba(0, 0, 0, 0);
   border: none;
 }
 .containerButtonX button:hover {
-  scale: 1.75;
+  scale: 2;
   transition: all 0.3s ease 0s;
 }
 .containerButtonX button:not(:hover) {
@@ -83,28 +85,7 @@
     color: rgb(255, 51, 0);
   }
 }
-/*.containerButtonX button i:not(:hover) {
-  transition: all 0.5s ease;
-  /* color: rgba(252, 6, 6, 1); 
-  animation: colnot 0.5s ease-in-out forwards;
-}
-@keyframes colnot {
-  100% {
-    color: rgb(255, 128, 0);
-  }
-  75% {
-    color: rgba(219, 145, 71, 0.92);
-  }
-  50% {
-    color: rgba(155, 122, 89, 0.85);
-  }
-  25% {
-    color: rgba(71, 66, 60, 0.78);
-  }
-  0% {
-    color: rgba(51, 50, 49, 0.7);
-  }
-}*/
+/*Contenedor Principal Before para movimiento color radial*/
 .containerCard::before {
   content: "";
   top: -25%;
@@ -122,13 +103,14 @@
     #00fd98
   );
   animation: spin 1.5s infinite linear;
-  z-index: -50;
+  z-index: -100;
 }
 @keyframes spin {
   100% {
     transform: rotate(-360deg);
   }
 }
+/*Contendertor Principal after para mostrar Inf.*/
 .containerCard::after {
   content: "";
   position: absolute;
@@ -140,8 +122,9 @@
   border-radius: 10px;
   border: 3px ridge #01010182;
   place-items: center;
-  z-index: -40;
+  z-index: -90;
 }
+/*Contenedor Image, Image*/
 .imageCharacter {
   position: absolute;
   background-color: rgba(18, 18, 18, 0.908);
@@ -154,7 +137,7 @@
   display: grid;
   place-items: top;
   overflow: hidden;
-  z-index: -30;
+  z-index: -80;
 }
 .imageCharacter img {
   display: flex;
@@ -164,15 +147,17 @@
 .containerCard.imageCharacter img:hover {
   scale: 1.5;
 }
-.containerCard .nameCharacter {
+/*Contenedor Name Characters*/
+.nameCharacter {
+  background-color: rgba(0, 0, 0, 0.7);
   display: flex;
+  align-items: center;
   justify-content: center;
+  height: auto;
   width: 100%;
   height: auto;
   color: white;
   overflow: hidden;
-  margin: 0px;
-  padding: 0px;
 }
 .imageCharacter.nameCharacter:hover {
 }

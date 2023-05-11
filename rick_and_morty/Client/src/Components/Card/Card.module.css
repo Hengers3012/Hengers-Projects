@@ -7,11 +7,27 @@
 } */
 
 .containerCard {
-  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 350px;
   width: 250px;
+  transition: all 0.3s ease 0s;
   border: 3px ridge #010101b4;
   position: relative;
-  border-radius: 10px;
+  border-radius: 15px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+.containerCard:hover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width: 310px;
+  border: 3px ridge #010101b4;
+  position: relative;
+  border-radius: 15px;
   box-shadow: 0 20px 35px rgba(0, 0, 0, 0.3);
   overflow: hidden;
 }
@@ -19,26 +35,76 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 10%;
-  height: auto;
-  margin: auto;
-  margin-top: 15px;
-  margin-left: 175px;
-  font-size: 10px;
+  width: auto;
+  height: 20px;
+  font-size: 15px;
   background-color: rgba(0, 0, 0, 0);
+  overflow: hidden;
 }
 .containerButtonX button {
-  position: relative;
+  scale: 1.5;
+  position: absolute;
+  top: 15px;
+  right: 10px;
   background-color: rgba(0, 0, 0, 0);
   border: none;
 }
 .containerButtonX button:hover {
-  scale: 1.25;
+  scale: 1.75;
   transition: all 0.3s ease 0s;
 }
 .containerButtonX button:not(:hover) {
   transition: all 0.5s ease;
 }
+
+.containerButtonX button i {
+  color: rgba(51, 50, 49, 0.747);
+}
+
+.containerButtonX button i:hover {
+  transition: all 0.5s ease;
+  /* color: rgba(252, 6, 6, 1); */
+  animation: col 0.3s ease-in-out forwards;
+}
+@keyframes col {
+  0% {
+    color: rgba(51, 50, 49, 0.7);
+  }
+  25% {
+    color: rgba(71, 62, 60, 0.78);
+  }
+  50% {
+    color: rgba(155, 103, 89, 0.85);
+  }
+  75% {
+    color: rgba(219, 93, 71, 0.92);
+  }
+  100% {
+    color: rgb(255, 51, 0);
+  }
+}
+/*.containerButtonX button i:not(:hover) {
+  transition: all 0.5s ease;
+  /* color: rgba(252, 6, 6, 1); 
+  animation: colnot 0.5s ease-in-out forwards;
+}
+@keyframes colnot {
+  100% {
+    color: rgb(255, 128, 0);
+  }
+  75% {
+    color: rgba(219, 145, 71, 0.92);
+  }
+  50% {
+    color: rgba(155, 122, 89, 0.85);
+  }
+  25% {
+    color: rgba(71, 66, 60, 0.78);
+  }
+  0% {
+    color: rgba(51, 50, 49, 0.7);
+  }
+}*/
 .containerCard::before {
   content: "";
   top: -25%;
@@ -64,7 +130,19 @@
   }
 }
 .containerCard::after {
-  content: " ";
+  content: "";
+  position: absolute;
+  background-color: rgba(18, 18, 18, 0.908);
+  top: 1.5%;
+  left: 2.2%;
+  height: 96%;
+  width: 94%;
+  border-radius: 10px;
+  border: 3px ridge #01010182;
+  place-items: center;
+  z-index: -40;
+}
+.imageCharacter {
   position: absolute;
   background-color: rgba(18, 18, 18, 0.908);
   top: 1.5%;
@@ -74,24 +152,27 @@
   border-radius: 10px;
   border: 3px ridge #01010182;
   display: grid;
-  place-items: center;
-  z-index: -40;
-}
-.imageCharacter {
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 15px;
-  height: 200px;
-  margin: 5px 25px 10px 25px;
-  border: 1px solid black;
-  border-radius: 10px;
-  box-shadow: 0 20px 35px rgba(6, 12, 6, 0.392);
+  place-items: top;
   overflow: hidden;
+  z-index: -30;
 }
 .imageCharacter img {
   display: flex;
   height: auto;
   width: 100%;
+}
+.containerCard.imageCharacter img:hover {
+  scale: 1.5;
+}
+.containerCard .nameCharacter {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  color: white;
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px;
+}
+.imageCharacter.nameCharacter:hover {
 }

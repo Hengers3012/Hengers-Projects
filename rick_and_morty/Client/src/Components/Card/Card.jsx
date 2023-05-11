@@ -10,7 +10,7 @@ export default function Card({ name, species, image, gender, onClose }) {
       <div className={cardStyles.containerInfo}>
         <div className={cardStyles.imageCharacter}>
           <img src={image} alt="Not found" />
-        </div>{" "}
+        </div>
         <div className={cardStyles.nameCharacter}>
           <h2>{name}</h2>
         </div>

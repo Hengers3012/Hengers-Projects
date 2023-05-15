@@ -12,6 +12,7 @@
   justify-content: center;
   height: 320px;
   width: 250px;
+  margin: 10px;
   transition: all 0.3s ease 0s;
   border: 3px ridge #010101b4;
   position: relative;
@@ -60,26 +61,26 @@
 }
 
 .containerButtonX button i {
-  color: rgba(51, 50, 49, 0.747);
+  color: rgba(51, 50, 49, 0.55);
 }
 
 .containerButtonX button i:hover {
   transition: all 0.5s ease;
   /* color: rgba(252, 6, 6, 1); */
-  animation: col 0.3s ease-in-out forwards;
+  animation: col 0.4s ease-in-out forwards;
 }
 @keyframes col {
   0% {
-    color: rgba(51, 50, 49, 0.7);
+    color: rgba(255, 51, 0, 0.5);
   }
   25% {
-    color: rgba(71, 62, 60, 0.78);
+    color: rgba(255, 51, 0, 0.65);
   }
   50% {
-    color: rgba(155, 103, 89, 0.85);
+    color: rgba(255, 51, 0, 0.75);
   }
   75% {
-    color: rgba(219, 93, 71, 0.92);
+    color: rgba(255, 51, 0, 0.85);
   }
   100% {
     color: rgb(255, 51, 0);
@@ -94,11 +95,11 @@
   width: 250%;
   position: absolute;
   background: conic-gradient(
-    #54fd00,
-    #b6fe00,
-    #77ff00,
-    #1aff00,
-    #00ff1a,
+    #55ff00,
+    #edfe00,
+    #09ff00,
+    #00ff1e,
+    #00ff62,
     #00ff59,
     #00fd98
   );

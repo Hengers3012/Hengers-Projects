@@ -1,0 +1,19 @@
+.navBarContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 5vh;
+  width: 98vw;
+  background-color: rgba(17, 20, 17, 0.66);
+  /* display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr; */
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.navBarSearch {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 10px;
+}

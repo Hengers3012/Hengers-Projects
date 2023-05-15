@@ -1,0 +1,32 @@
+.navBottonContainer {
+  height: auto;
+  width: 100vw;
+  background-color: rgba(22, 22, 22, 0.737);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.navBottonElements a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 5vh;
+  width: auto;
+  font-size: xx-large;
+  color: aliceblue;
+  text-decoration: none;
+  margin-right: 20px;
+}
+.navBottonLogo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.navBottonLogo img {
+  height: 5vh;
+  width: auto;
+}

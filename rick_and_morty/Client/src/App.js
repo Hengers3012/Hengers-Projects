@@ -10,23 +10,15 @@ import characters from "./data.js";
 function App() {
   return (
     <div className={appStyles.containerApp}>
-      <div>
+      <div className={appStyles.navBar}>
         <NavBar />
       </div>
-
-      <hr />
-      <hr />
-      <hr />
 
       <div className={appStyles.containerCards}>
         <Cards characters={characters} />
       </div>
 
-      <hr />
-      <hr />
-      <hr />
-
-      <div>
+      <div className={appStyles.navBarBottom}>
         <NavBarBottom />
       </div>
     </div>

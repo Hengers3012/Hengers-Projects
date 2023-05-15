@@ -1,13 +1,28 @@
 .containerApp {
-  text-align: center;
-}
-.containerCards {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+.containerCards {
+  display: flex;
+  height: 90vh;
+  width: auto;
+}
+.navBar {
+  display: flex;
+  justify-content: space-evenly;
+  width: auto;
   margin: 10px 10px 10px 10px;
 }
-
+.navBarBottom {
+  display: flex;
+  justify-content: space-evenly;
+  height: 5vh;
+  width: auto;
+}
 /* .App-logo {
   height: 40vmin;
   pointer-events: none;

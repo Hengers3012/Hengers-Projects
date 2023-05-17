@@ -10,6 +10,7 @@ import characters from "./data.js";
 function App() {
   return (
     <div className={appStyles.containerApp}>
+      <div className={appStyles.nave}></div>
       <div className={appStyles.navBar}>
         <NavBar />
       </div>

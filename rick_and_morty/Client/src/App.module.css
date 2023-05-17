@@ -1,15 +1,53 @@
 .containerApp {
+  background-image: url(./Image/RickAndMorty-Space-1.jpg);
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
   height: 100vh;
   width: 100vw;
+  z-index: -10;
+  animation: fondo 1s ease-out infinite;
 }
+/* @keyframes fondo {
+  100% {
+    scale: 0.1;
+  }
+} */
+
+/* .nave {
+  display: flex;
+  position: absolute;
+  background-image: url(./Image/Nave.png);
+  background-size: cover;
+  margin-left: -120%;
+  height: 250px;
+  width: 500px;
+  z-index: 0;
+  overflow: hidden;
+  animation: nave 8s linear infinite;
+}
+@keyframes nave {
+  100% {
+    transform: translateX(calc(100% + 100vw));
+  }
+  50.01% {
+    transform: translateX(calc(-100% - 100vw));
+  }
+  50% {
+    transform: translateX(calc(-100% - 100vw)) rotateY(180deg);
+  }
+  0% {
+    transform: translateX(calc(100% + 100vw)) rotateY(180deg);
+  }
+} */
 .containerCards {
   display: flex;
+  justify-content: center;
   height: 90vh;
   width: auto;
+  z-index: 1;
 }
 .navBar {
   display: flex;

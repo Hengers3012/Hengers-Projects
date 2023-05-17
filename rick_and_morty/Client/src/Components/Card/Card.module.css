@@ -26,6 +26,7 @@
   justify-content: center;
   height: 245px;
   width: 250px;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
   border: 3px ridge #010101b4;
   position: relative;
   border-radius: 15px;

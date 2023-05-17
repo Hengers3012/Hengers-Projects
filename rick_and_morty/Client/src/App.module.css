@@ -38,15 +38,16 @@
     transform: translateX(calc(-100% - 50vw)) translateY(500px);
   }
   50% {
-    transform: translateX(calc(-100% - 50vw)) rotateY(180deg) translateY(-200px);
+    transform: translateX(calc(-100% - 50vw)) rotateY(180deg) translateY(-300px);
   }
   25% {
-    transform: translateX(calc(100vw)) rotateY(180deg) translateY(100px);
-  }
-  0% {
     transform: translateX(calc(100vw)) rotateY(180deg) translateY(-100px);
   }
+  0% {
+    transform: translateX(calc(100vw)) rotateY(180deg) translateY(100px);
+  }
 }
+
 .containerCards {
   display: flex;
   justify-content: center;
@@ -54,12 +55,14 @@
   width: auto;
   z-index: 1;
 }
+
 .navBar {
   display: flex;
   justify-content: space-evenly;
   width: auto;
   margin: 10px 10px 10px 10px;
 }
+
 .navBarBottom {
   display: flex;
   justify-content: space-evenly;
@@ -74,6 +77,7 @@
   align-items: center;
   z-index: 0;
 }
+
 .stars {
   width: 1px;
   height: 1px;
@@ -632,6 +636,7 @@
     1253px 90px #fff, 804px 850px #fff, 1039px 805px #fff, 19px 1157px #fff,
     1354px 1247px #fff;
 }
+
 @keyframes animStar {
   from {
     transform: translateY(0px);

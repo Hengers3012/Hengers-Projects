@@ -10,8 +10,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 320px;
-  width: 250px;
+  height: 290px;
+  width: 230px;
   margin: 10px;
   transition: all 0.3s ease 0s;
   border: 3px ridge #010101b4;
@@ -24,8 +24,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 245px;
-  width: 250px;
+  height: 225px;
+  width: 235px;
   transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
   border: 3px ridge #010101b4;
   position: relative;

@@ -10,12 +10,42 @@ export default function NavBarBottom() {
         <h2>Created by Hengers Rosario</h2>
       </div>
       <div className={navBottonStyles.navBottonElements}>
+        <ul>
+          <li>
+            <a href="http://" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-square-github"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/Hengers3012/Hengers-Projects"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="http://" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="http://" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </li>
+        </ul>
+        {/* <ul>
+          <a href="http://" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-square-github"></i>
+          </a>
+        </ul>
         <a href="http://" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-square-github"></i>
-          <i class="fa-brands fa-instagram"></i>
+          {/* <i class="fa-brands fa-instagram"></i>
           <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-youtube"></i>
-        </a>
+          <i class="fa-brands fa-youtube"></i> 
+        </a> */}
       </div>
     </div>
   );

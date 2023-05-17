@@ -25,21 +25,26 @@
   height: 250px;
   width: 500px;
   z-index: 0;
-  overflow: hidden;
   animation: nave 50s linear infinite;
 }
 @keyframes nave {
   100% {
-    transform: translateX(calc(100vw));
+    transform: translateX(calc(60vw));
+  }
+  75% {
+    transform: translateX(calc(-100% - 50vw)) translateY(250px);
   }
   50.01% {
-    transform: translateX(calc(-100% - 50vw));
+    transform: translateX(calc(-100% - 50vw)) translateY(500px);
   }
   50% {
-    transform: translateX(calc(-100% - 50vw)) rotateY(180deg);
+    transform: translateX(calc(-100% - 50vw)) rotateY(180deg) translateY(-200px);
+  }
+  25% {
+    transform: translateX(calc(100vw)) rotateY(180deg) translateY(100px);
   }
   0% {
-    transform: translateX(calc(100vw)) rotateY(180deg);
+    transform: translateX(calc(100vw)) rotateY(180deg) translateY(-100px);
   }
 }
 .containerCards {

@@ -1,0 +1,11 @@
+.aboutContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+img {
+  width: 250px;
+  height: auto;
+}

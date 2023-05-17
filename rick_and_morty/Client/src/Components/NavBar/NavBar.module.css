@@ -15,5 +15,16 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+
   margin-right: 10px;
+}
+.active {
+  -webkit-text-stroke: 1.5px rgb(22, 236, 176);
+  color: rgba(0, 255, 255, 0.6);
+  text-underline-offset: 5px;
+  text-decoration-color: rgb(22, 236, 176);
+}
+.disable {
+  text-decoration: none;
+  color: inherit;
 }

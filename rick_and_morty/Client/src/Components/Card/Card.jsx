@@ -1,5 +1,7 @@
+import { Link } from "react-router-dom";
 import cardStyles from "./Card.module.css";
-export default function Card({ name, species, image, gender, onClose }) {
+
+export default function Card({ id, name, species, image, gender, onClose }) {
   return (
     <div className={cardStyles.containerCard}>
       <div className={cardStyles.containerButtonX}>
@@ -7,14 +9,18 @@ export default function Card({ name, species, image, gender, onClose }) {
           <i class="fa-solid fa-trash"></i>
         </button>
       </div>
+
       <div className={cardStyles.containerInfo}>
         <div className={cardStyles.imageCharacter}>
           <img src={image} alt="Not found" />
         </div>
-        <div className={cardStyles.nameCharacter}>
-          <h2>{name}</h2>
-        </div>
+        <Link to={`/detail/${id}`}>
+          <div className={cardStyles.nameCharacter}>
+            <h2>{name}</h2>
+          </div>{" "}
+        </Link>
       </div>
+
       {/* <div className={cardStyles.descriptionCharacter}>
         <h2>{species}</h2>
         <h2>{gender}</h2>

@@ -5,10 +5,11 @@
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   z-index: -10;
   overflow: hidden;
+  overflow-x: hidden;
   animation: fondo 1s ease-out infinite;
 }
 /* @keyframes fondo {
@@ -18,7 +19,7 @@
 } */
 
 .containerApp .nave {
-  display: flex;
+  /* display: none; */
   position: absolute;
   background-image: url(./Image/Nave.png);
   background-size: cover;
@@ -29,22 +30,29 @@
 }
 @keyframes nave {
   100% {
+    transform: translateX(calc(60vw)) scale(1.5);
+  }
+  95% {
     transform: translateX(calc(60vw));
+    transform: scale(1.5);
   }
   75% {
-    transform: translateX(calc(-100% - 50vw)) translateY(250px);
+    transform: translateX(calc(-100% - 50vw)) translateY(250px) scale(0.75);
   }
   50.01% {
-    transform: translateX(calc(-100% - 50vw)) translateY(500px);
+    transform: translateX(calc(-100% - 50vw)) translateY(500px) scale(0.1);
   }
   50% {
-    transform: translateX(calc(-100% - 50vw)) rotateY(180deg) translateY(-300px);
+    transform: translateX(calc(-100% - 50vw)) rotateY(180deg) translateY(-300px)
+      scale(0.5);
   }
   25% {
-    transform: translateX(calc(100vw)) rotateY(180deg) translateY(-100px);
+    transform: translateX(calc(100vw)) rotateY(180deg) translateY(-100px)
+      scale(1);
   }
   0% {
-    transform: translateX(calc(100vw)) rotateY(180deg) translateY(100px);
+    transform: translateX(calc(100vw)) rotateY(180deg) translateY(100px)
+      scale(1.5);
   }
 }
 

@@ -9,16 +9,15 @@ export default function Card({ id, name, species, image, gender, onClose }) {
           <i class="fa-solid fa-trash"></i>
         </button>
       </div>
-
-      <div className={cardStyles.containerInfo}>
-        <div className={cardStyles.imageCharacter}>
-          <img src={image} alt="Not found" />
+      <div className={cardStyles.imageCharacter}>
+        <img src={image} alt="Not found" />
+        <div className={cardStyles.containerInfo}>
+          <Link to={`/detail/${id}`}>
+            <div className={cardStyles.nameCharacter}>
+              <h2>{name}</h2>
+            </div>{" "}
+          </Link>
         </div>
-        <Link to={`/detail/${id}`}>
-          <div className={cardStyles.nameCharacter}>
-            <h2>{name}</h2>
-          </div>{" "}
-        </Link>
       </div>
 
       {/* <div className={cardStyles.descriptionCharacter}>

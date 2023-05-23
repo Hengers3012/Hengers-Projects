@@ -10,9 +10,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 290px;
+  height: fit-content;
   width: 230px;
   margin: 10px;
+  padding: 5px;
   transition: all 0.3s ease 0s;
   border: 3px ridge #010101b4;
   position: relative;
@@ -21,35 +22,25 @@
   overflow: hidden;
 }
 .containerCard:hover {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 225px;
-  width: 235px;
+  height: 290px;
+  width: 230px;
   transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-  border: 3px ridge #010101b4;
-  position: relative;
-  border-radius: 15px;
-  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.3);
-  overflow: hidden;
 }
 
 /*Botón X*/
 .containerButtonX {
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
-  width: auto;
-  height: 20px;
+  justify-content: center; */
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
   font-size: 15px;
   background-color: rgba(0, 0, 0, 0);
   overflow: hidden;
 }
 .containerButtonX button {
   scale: 1.5;
-  position: absolute;
-  top: 18px;
-  right: 15px;
   background-color: rgba(0, 0, 0, 0);
   border: none;
 }
@@ -128,23 +119,24 @@
 }
 /*Contenedor Image, Image*/
 .imageCharacter {
-  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: rgba(18, 18, 18, 0.908);
-  top: 1.5%;
-  left: 2.2%;
-  height: 95%;
-  width: 93%;
+  height: 100%;
+  width: 100%;
   border-radius: 10px;
   border: 3px ridge #01010182;
-  display: grid;
-  place-items: top;
+  /* display: grid; */
+  /* place-items: top; */
   overflow: hidden;
   z-index: -80;
+  background-size: cover;
 }
 .imageCharacter img {
-  display: flex;
-  height: auto;
-  width: 100%;
+  width: auto;
+  height: 225px;
+  border-radius: 15px;
 }
 .containerCard.imageCharacter img:hover {
   scale: 1.5;
@@ -159,11 +151,12 @@
   overflow: hidden;
 }
 .containerInfo {
-  width: 95%;
   height: auto;
   justify-content: center;
-  margin-bottom: -81%;
   border-radius: 0 0 10px 10px;
   background-color: rgba(18, 18, 18, 0.5);
   transition: all 0.5s ease;
+  position: absolute;
+  z-index: -70;
+  bottom: 0;
 }

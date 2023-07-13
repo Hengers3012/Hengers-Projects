@@ -6,9 +6,10 @@ import Link from "next/link";
 function Navbar() {
   return (
     <div>
-      <nav className="flex items-center bg-gray-800 p-4 m-4 rounded-xl">
-        <div>
+      <nav className="flex items-center bg-gray-800 p-4 m-4 rounded-xl ">
+        <div className="flex ">
           <Image
+            className=""
             src={logo}
             alt="Elixir Cars Logo"
             width={"200"}

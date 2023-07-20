@@ -18,19 +18,19 @@ const HalfWaveRectifier: React.FC<HalfWaveRectifierProps> = ({
     let val2: number = 0.0;
     let i: number = startP;
 
-    while (i <= endP) {
-      val1 = Math.sin(i - theta);
-      const a: number = Math.sin(alfa - theta);
-      const b: number =
-        ((resistance / coil) * (alfa - i)) / (2 * startP * frequency);
-      val2 = a * Math.exp(b);
+    // while (i <= endP) {
+    //   val1 = Math.sin(i - theta);
+    //   const a: number = Math.sin(alfa - theta);
+    //   const b: number =
+    //     ((resistance / coil) * (alfa - i)) / (2 * startP * frequency);
+    //   val2 = a * Math.exp(b);
 
-      if (val1 / val2 > 0.99 && val1 / val2 < 1.01) {
-        return i;
-      }
+    //   if (val1 / val2 > 0.99 && val1 / val2 < 1.01) {
+    //     return i;
+    //   }
 
-      i += 0.000001;
-    }
+    //   i += 0.000001;
+    // }
 
     return null;
   };
@@ -38,7 +38,7 @@ const HalfWaveRectifier: React.FC<HalfWaveRectifierProps> = ({
   const beta: number | null = calculateBeta();
 
   return (
-    <div>
+    <div className="flex h-full w-full text-center items-center justify-center">
       <p>Beta value: {beta}</p>
     </div>
   );

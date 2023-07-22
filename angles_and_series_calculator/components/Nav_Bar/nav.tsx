@@ -8,13 +8,21 @@ export default function Nav() {
         <nav className="flex flex-grow justify-center">
           <ul className="flex [&>li>a]:inline-block [&>li>a]:px-8 [&>li>a]:py-2 [&>li>a]:text-slate-50 text-xl">
             <li>
-              <a href="/">
+              <a
+                href="/"
+                className=" transition duration-300 hover:text-[#FFD700]"
+              >
                 Beta para un controlador bidireccional de CA con carga RL
               </a>
             </li>
 
             <li>
-              <a href="/error-404">Otros...</a>
+              <a
+                href="/error-404"
+                className=" transition duration-300 hover:text-[#FFD700]"
+              >
+                Otros...
+              </a>
             </li>
           </ul>
         </nav>

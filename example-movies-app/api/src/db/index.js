@@ -40,7 +40,12 @@ async function inicializarBaseDeDatos() {
           ('Pulp Fiction', 1994, 154, 'Una película de Quentin Tarantino con una narrativa no lineal.', 'R'),
           ('El Señor de los Anillos: La Comunidad del Anillo', 2001, 178, 'La primera entrega de la trilogía basada en la obra de J.R.R. Tolkien.', 'PG-13'),
           ('La La Land', 2016, 128, 'Un musical romántico ambientado en Los Ángeles.', 'PG-13'),
-          ('Matrix', 1999, 136, 'Una película de ciencia ficción que desafía la realidad.', 'R');
+          ('Matrix', 1999, 136, 'Una película de ciencia ficción que desafía la realidad.', 'R'),
+          ('Blade Runner', 1982, 117, 'Una película de ciencia ficción ambientada en un futuro distópico donde los humanos cazan a androides rebeldes llamados "replicantes."', 'R'),
+          ('Jurassic Park', 1993, 127, 'Un parque temático de dinosaurios se convierte en un caos cuando los dinosaurios escapan y comienzan a causar estragos.', 'PG-13'),
+          ('Forrest Gump', 1994, 142, 'La historia de un hombre con un coeficiente intelectual bajo que vive una vida extraordinaria a lo largo de décadas.', 'PG-13'),
+          ('Inception', 2010, 148, 'Un ladrón especializado en robar secretos a través de los sueños es contratado para realizar una tarea casi imposible: plantar una idea en la mente de una persona.', 'PG-13'),
+          ('The Shawshank Redemption', 1994, 142, 'La historia de un hombre condenado injustamente a cadena perpetua que busca su libertad y redención.', 'R');
       `);
 
       console.log(

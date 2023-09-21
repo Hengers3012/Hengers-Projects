@@ -16,15 +16,15 @@ async function inicializarBaseDeDatos() {
   try {
     // Ejecuto una consulta SQL para crear la tabla 'peliculas' si aún no existe
     await pool.query(`
-      CREATE TABLE IF NOT EXISTS peliculas (
-        peliculaid SERIAL PRIMARY KEY, // Campo autoincremental que sirve como clave primaria
-        titulo VARCHAR(255) NOT NULL, // Campo para el título de la película, que no puede ser nulo
-        ano_estreno INTEGER NOT NULL, // Campo para el año de estreno, que no puede ser nulo
-        duracion INTEGER NOT NULL, // Campo para la duración en minutos, que no puede ser nulo
-        sinopsis TEXT, // Campo para la sinopsis de la película
-        clasificacion VARCHAR(50) // Campo para la clasificación de la película
-      );
-    `);
+    CREATE TABLE IF NOT EXISTS peliculas (
+      peliculaid SERIAL PRIMARY KEY, -- Campo autoincremental que sirve como clave primaria
+      titulo VARCHAR(255) NOT NULL, -- Campo para el título de la película, que no puede ser nulo
+      ano_estreno INTEGER NOT NULL, -- Campo para el año de estreno, que no puede ser nulo
+      duracion INTEGER NOT NULL, -- Campo para la duración en minutos, que no puede ser nulo
+      sinopsis TEXT, -- Campo para la sinopsis de la película
+      clasificacion VARCHAR(50) -- Campo para la clasificación de la película
+    );
+  `);
 
     // Consulta para contar el número de registros en la tabla de películas
     const countQuery = "SELECT COUNT(*) FROM peliculas";

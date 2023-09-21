@@ -20,6 +20,8 @@ const Movies_App = () => {
       });
   }, []);
 
+  // Datos entregados por la API
+
   // ano_estreno: 2009;
   // clasificacion: "PG-13";
   // duracion: 162;
@@ -28,9 +30,9 @@ const Movies_App = () => {
   // titulo: "Avatar";
 
   return (
-    <div>
+    <div className="container">
       <h1>MOVIES APP</h1>
-      <table>
+      <table className="tabla">
         <thead>
           <tr className="encabezado">
             <th>ID</th>

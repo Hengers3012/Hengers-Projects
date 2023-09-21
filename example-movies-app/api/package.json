@@ -1,7 +1,7 @@
 {
   "name": "api",
   "version": "1.0.0",
-  "description": "",
+  "description": "API para la app de películas",
   "main": "index.js",
   "scripts": {
     "start": "node app.js",

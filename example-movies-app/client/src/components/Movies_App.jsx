@@ -5,6 +5,7 @@ import "./styles.css";
 
 const Movies_App = () => {
   const [movies, setMovies] = useState([]);
+
   console.log(movies);
 
   useEffect(() => {
@@ -28,24 +29,29 @@ const Movies_App = () => {
 
   return (
     <div>
-      <h1>MOVIES APP</h1>{" "}
+      <h1>MOVIES APP</h1>
       <table>
         <thead>
           <tr className="encabezado">
-            <th>id</th>
-            <th>titulo</th>
-            <th>sinopsis</th>
-            <th>clasificación</th>
-            <th>duracion</th>
-            <th>estreno</th>
+            <th>ID</th>
+            <th>TITULO</th>
+            <th>SIPNOSIS</th>
+            <th>CLASIFICACION</th>
+            <th>DURACION</th>
+            <th>ESTRENO</th>
           </tr>
         </thead>
         <tbody>
-          {movies.map((movie) => {
-            <tr>
-              <td>{movie.titulo}</td>
-            </tr>;
-          })}
+          {movies.map((movie) => (
+            <tr className="contenido" key={movie?.peliculaid}>
+              <td>{movie?.peliculaid}</td>
+              <td>{movie?.titulo}</td>
+              <td>{movie?.sinopsis}</td>
+              <td>{movie?.clasificacion}</td>
+              <td>{movie?.duracion} min</td>
+              <td>{movie?.ano_estreno}</td>
+            </tr>
+          ))}
         </tbody>
       </table>
     </div>

@@ -59,6 +59,7 @@ const MyComponent: React.FC = () => {
           id="resistencia"
           value={resistencia}
           onChange={(e) => setResistencia(Number(e.target.value))}
+          className="text-black"
         />
 
         <label htmlFor="bobina">Bobina (Henrys):</label>
@@ -67,6 +68,7 @@ const MyComponent: React.FC = () => {
           id="bobina"
           value={bobina}
           onChange={(e) => setBobina(Number(e.target.value))}
+          className="text-black"
         />
 
         <label htmlFor="frecuencia">Frecuencia (Hertz):</label>
@@ -75,6 +77,7 @@ const MyComponent: React.FC = () => {
           id="frecuencia"
           value={frecuencia}
           onChange={(e) => setFrecuencia(Number(e.target.value))}
+          className="text-black"
         />
 
         <label htmlFor="alfa">Ángulo Alfa (Grados):</label>
@@ -83,6 +86,7 @@ const MyComponent: React.FC = () => {
           id="alfa"
           value={alfa}
           onChange={(e) => setAlfa(Number(e.target.value))}
+          className="text-black"
         />
 
         <label htmlFor="theta">Ángulo Theta (Radianes):</label>
@@ -91,6 +95,7 @@ const MyComponent: React.FC = () => {
           id="theta"
           value={theta}
           onChange={(e) => setTheta(Number(e.target.value))}
+          className="text-black"
         />
 
         <button type="submit">Calcular</button>
